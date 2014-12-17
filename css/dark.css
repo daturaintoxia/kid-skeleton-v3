@@ -1,0 +1,210 @@
+/* Dark Theme */
+
+
+
+span,body{
+	color:#fff;
+}
+body{
+	background: #333;
+
+}
+#wrap{
+	background:#4F4D4A;
+}
+
+/*--------------------------------------------------------------*/
+ h1,h2,h3,h4,h5,h6{
+	color: #eee;
+ }
+p,a{
+	color: #ccc;
+	
+}
+
+.sticky {
+	border: 1px dashed #eee;
+}
+/* #Links
+================================================== */
+a, a:visited {text-decoration: underline; outline: 0; }
+a:hover, a:focus { color: #fff; text-decoration: none;}
+p a, p a:visited { line-height: inherit; }
+
+/*--------TITLES-----------------------------------------------------------------------*/
+#site-title a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+#header div#site-title a, #header h1#site-title, #header h1#site-title a {
+	text-shadow: none !important;
+	color: #ccc;
+	letter-spacing:0px;
+	margin-bottom: 3px;
+}
+#header span.site-desc{
+	color: #aaa;
+}
+/*-------NAVIGATION------------------------------------------------------------*/
+#navigation ul.sub-menu li a:hover,#navigation ul.children li a:hover
+ {
+	background:#333;
+	color: #fff;
+}
+#navigation ul li a:hover{
+	color:#fff;
+	background:#3F3E3B;
+}
+#navigation ul.sub-menu li ,#navigation ul.children li a{
+	background: #3F3E3B;
+}
+
+/*---------------------------------------------------------------*/
+
+pre,code {
+	background: rgba(0,0,0,0.3) !important;
+	box-shadow: 1px 2px 2px #ccc;
+}
+.entry-title{
+	padding:10px;
+	background: rgba(0,0,0,0.2);
+}
+.widget-title{
+	padding:5px;
+	background: rgba(0,0,0,0.2);
+}
+.entry-meta,.entry-utility {
+	color: #666;
+
+}
+.cat-links,.comments-link,.meta-sep,.entry-utility {
+	
+	color: #eee;
+}
+.rsswidget{
+	font-weight: bold;
+}
+.skeleton_relatedposts h4 {
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+/*================ List Items/ ==================*/
+li.widget-container.widget_meta li,
+li.widget-container.widget_categories li,
+li.widget-container.widget_archive li,
+li.widget-container.widget_recent_entries li,
+li.widget-container.widget_recent_comments li {
+
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+table {
+	margin: .5em 0 1em;
+}
+
+table th {
+	text-align: left;
+	border: 1px solid #d1d1d1;
+	padding: .4em .8em;
+	background: #3F3E3B url(images/gradient_small_trans.png) repeat-x 0 top;
+	font-weight: bold;
+}
+
+table td {
+	background-color: #494744;
+	border: 1px solid #33322F;
+	padding: 10px;
+}
+blockquote, blockquote p {  color: #D8D8D8;  }
+blockquote {}
+blockquote cite { color: #919191; }
+blockquote cite:before { content: "\2014 \0020"; }
+blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #919191; }
+strong {  color: #fff; }	
+#wp-calendar {
+	font-family: arial,helvetica,sans-serif;
+	width: 100%;
+	font-size: .85em;
+}
+
+#wp-calendar td {
+	padding: 4px 0;
+	text-align: center;
+	border: 1px solid #3F3E3B;
+	background-color: #494744;
+
+	color: #afafaf;
+}
+
+#wp-calendar td.pad {
+
+}
+
+#wp-calendar td#today {
+	color: #fff;
+	background-color: #6e6e6e;
+
+}
+
+#wp-calendar caption {
+	font-weight: bold;
+}
+
+#wp-calendar th {
+	font-style: normal;
+	background: #3F3E3B url(images/gradient_small_trans.png) repeat-x 0 top;
+	border: 1px solid #3F3E3B;
+	padding: 5px;
+	color: #ccc;
+
+}
+/* @group Black  */
+a.button {
+  color: #f4f4f4 !important;
+  line-height: 1.5em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+  text-shadow: 0 1px 0px #1e1e1e;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  background: #242424;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #303030), color-stop(100%, #242424));
+  background: -webkit-linear-gradient(top, #303030 0%, #242424 100%);
+  background: -o-linear-gradient(top, #303030 0%, #242424 100%);
+  background: -ms-linear-gradient(top, #303030 0%, #242424 100%);
+  background: -moz-linear-gradient(top, #303030 0%, #242424 100%);
+  background: linear-gradient(top bottom, #303030 0%, #242424 100%);
+  background-clip: border-box;
+  -pie-background: linear-gradient(top, #303030, #242424);
+  behavior: url("../css/PIE.htc");
+  position: relative;
+  background-repeat: repeat-x;
+}
+a.button :hover {
+  background: black;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #404040), color-stop(100%, black));
+  background: -webkit-linear-gradient(top, #404040 0%, black 100%);
+  background: -o-linear-gradient(top, #404040 0%, black 100%);
+  background: -ms-linear-gradient(top, #404040 0%, black 100%);
+  background: -moz-linear-gradient(top, #404040 0%, black 100%);
+  background: linear-gradient(top bottom, #404040 0%, #000000 100%);
+  background-clip: border-box;
+  -pie-background: linear-gradient(top, #404040, #000000);
+  behavior: url("../css/PIE.htc");
+  position: relative;
+  cursor: pointer;
+}
+a.button :active {
+  -webkit-box-shadow: inset 0 2px 6px 0 black, inset 0 0 0 0 black, 0 1px 1px 0 #eeeeee;
+  -moz-box-shadow: inset 0 2px 6px 0 black, inset 0 0 0 0 black, 0 1px 1px 0 #eeeeee;
+  box-shadow: inset 0 2px 6px 0 black, inset 0 0 0 0 black, 0 1px 1px 0 #eeeeee;
+}
+
+a.button  span.btn_caption {
+  color: gray !important;
+  text-shadow: 0 1px 0 #000;
+}

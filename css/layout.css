@@ -1,0 +1,171 @@
+
+
+/* #Media Queries
+================================================== */
+.gallery .gallery-item{max-width: 150px; height: auto; }
+/* #960 Grid */
+@media only screen and (min-width: 960px) and (max-width: 1190px) {
+	#navigation ul li a {font-size: .9em; padding: 15px;}
+	.gallery .gallery-item{max-width: 150px; height: auto; }
+}
+
+/* Note: Design for a width of 768px */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	#navigation ul li a {font-size: .9em; padding: 14px 8px;}
+	.gallery .gallery-item{max-width: 150px; height: auto; }
+}
+
+/* Mobile Landscape/Browser */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	/* Initial reset and hide sublevels in mobile view */
+	#navigation ul.sub-menu,#navigation ul.children,
+	#navigation ul.sub-menu li,#navigation ul.children li,
+	#navigation ul.sub-menu li:hover,#navigation ul.children li:hover,
+	#navigation ul.sub-menu li a,#navigation ul.children li a,
+	#navigation ul.sub-menu li a:hover,#navigation ul.children li a:hover
+	 {
+		display: none;
+		position: relative;
+		left: 0px;
+		line-height: 100%;
+		background: none;
+		border: none;
+		border-style: none;
+		box-shadow:none;
+		padding: 0;
+		margin: 0;
+		height: auto;
+		background-image: none;
+	}
+
+	/* Declare new padding for submenu items */
+
+	#navigation ul.sub-menu li a,#navigation ul.children li a,
+	#navigation ul.sub-menu li a:hover,#navigation ul.children li a:hover {
+		padding: 4px 0px 4px 10px;
+	}
+
+	/* Show on hover */
+
+	#navigation li:hover ul.sub-menu,#navigation li:hover ul.children,
+	#navigation li:hover ul.sub-menu li,#navigation li:hover ul.children li,
+	#navigation li:hover ul.sub-menu li a,#navigation li:hover ul.children li a {
+		display: inline-block;
+	}
+	#respond textarea {width:300px;}
+
+	#wrap .products li,.products li.first,.products li.last {
+	float: left;
+	clear: both;
+	margin: 20px 0px 20px 0px;
+	width: 100%;
+	}
+	#breadcrumb {display: none;}
+
+	#sidebar .widget-container {margin-left: 0px;}
+	.gallery .gallery-item{max-width: 250px; height: auto; }
+}
+
+	/* Anything smaller than standard 960 */
+	@media only screen and (max-width: 959px) {
+		#header #site-title a {
+			font-size: 28px !important;
+		}
+		#header .site-desc {
+			font-size: 18px !important;
+			line-height: 1 !important;
+		}
+		#header .inner {
+			padding-bottom: 0;
+		}
+		.gallery .gallery-item{max-width: 350px; height: auto; }
+	}
+	/*===== Responsive meny================================*/
+		@media only screen and (max-width: 767px) {
+		#header{
+			margin: 20px 0;
+		}
+		#navigation ul li{
+			width: 100% !important;
+		}
+		#navigation ul .sub-menu li a, #navigation ul .children li a, #navigation li:hover ul .sub-menu, li .menu-item{
+			width: 97% !important;
+			position:relative;
+			
+			
+		}
+		#navigation ul.children li a{
+			margin:0 5px 0 5px;
+		}
+		#navigation ul.sub-menu, #navigation ul.children, #navigation ul.sub-menu li, #navigation ul.children li, #navigation ul.sub-menu li:hover, #navigation ul.children li:hover, #navigation ul.sub-menu li a, #navigation ul.children li a, #navigation ul.sub-menu li a:hover, #navigation ul.children li a:hover{
+			width: 100% !important;
+			position:relative;
+			padding: 5px 0 5px 0;
+			background: inherit;
+			margin:0;
+		}
+			.gallery .gallery-item img, .gallery .gallery-item img.thumbnail {
+			width: 182px !important;
+			max-width: 182px !iportant;
+			height: auto;
+		}
+				#navigation ul, #navigation ul li, #navigation ul ul{
+			display: none;
+		}
+		}
+	@media only screen and (max-width: 480px) {
+			#header{
+			margin: 20px 0;
+		}
+		#header #site-title a {
+				font-size: 23px !important;
+		}
+		#navigation ul .sub-menu li a, #navigation ul .children li a, #navigation li:hover ul .sub-menu{
+			width: 134% !important;
+			position:relative;
+			
+			
+		}
+		#navigation ul.sub-menu, #navigation ul.children, #navigation ul.sub-menu li, #navigation ul.children li, #navigation ul.sub-menu li:hover, #navigation ul.children li:hover, #navigation ul.sub-menu li a, #navigation ul.children li a, #navigation ul.sub-menu li a:hover, #navigation ul.children li a:hover{
+			width: 100% !important;
+			position:relative;
+			padding: 5px 0 5px 0;
+			background: inherit;
+			margin: 0;
+		}
+		.gallery .gallery-item img, .gallery .gallery-item img.thumbnail {
+			width: 350px !important;
+			max-width: 350px !iportant;
+			height: auto;
+		}
+		#navigation ul, #navigation ul li, #navigation ul ul{
+			display: none;
+		}
+}
+	/* iPad Portrait Only */
+	@media only screen and (min-width: 768px) and (max-width: 991px) and (max-device-width: 1000px) {}
+
+	/* Mobile Only */
+	@media only screen and (max-width: 767px) and (max-device-width: 1000px) {}
+
+	/* Mobile Landscape Only */
+	@media only screen and (min-width: 480px) and (max-width: 767px) and (max-device-width: 1000px) {}
+
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/

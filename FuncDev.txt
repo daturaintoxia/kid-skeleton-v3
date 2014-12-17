@@ -1,0 +1,39 @@
+<?php
+if ( !class_exists( 'ReduxFramework' ) && file_exists( dirname( __FILE__ ) . '/ReduxFramework/ReduxCore/framework.php' ) ) {
+    require_once( dirname( __FILE__ ) . '/ReduxFramework/ReduxCore/framework.php' );
+}
+ global $redux_demo2 ;
+			 if (($redux_demo2['main-theme1'] == TRUE) && ($redux_demo2['main-theme2'] == TRUE)) {
+					require_once( dirname( __FILE__ ) . '/onepage-functions.php' );
+					}
+			if (($redux_demo2['main-theme1'] == TRUE) &&  ($redux_demo2['main-theme2'] == FALSE)) {
+					require_once( dirname( __FILE__ ) . '/onepage-functions.php' );
+ } else{
+              require_once( dirname( __FILE__ ) . '/default-functions.php' );
+}
+=======================================
+<?php
+if ( !class_exists( 'ReduxFramework' ) && file_exists( dirname( __FILE__ ) . '/ReduxFramework/ReduxCore/framework.php' ) ) {
+    require_once( dirname( __FILE__ ) . '/ReduxFramework/ReduxCore/framework.php' );
+}
+ global $redux_demo2 ;
+if ($redux_demo2['main-theme1'] = TRUE){
+	$flow3= "one_page_go";
+	}
+if ($redux_demo2['main-theme1'] = FALSE){
+	$flow3= "default_page_go";
+					
+}
+
+
+switch ($flow3)
+{
+case "one_page_go":
+  require_once( dirname( __FILE__ ) . '/onepage-functions.php' );
+  break;
+case "default_page_go":
+  require_once( dirname( __FILE__ ) . '/default-functions.php' );
+  break;
+default:
+  require_once( dirname( __FILE__ ) . '/default-functions.php' );
+}

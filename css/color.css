@@ -1,0 +1,30 @@
+/*
+
+*/
+
+
+/* Table of Contents
+==================================================
+	#Global Reset
+	#Structural Customization
+	#Header
+	#Navigation Bar
+	#Typography
+	#Tables
+	#Widgets
+	#WP Blog
+	#Styled Buttons
+	#Tabs
+	#Toggles
+	#Callouts
+	#Comments
+	#WP Gallery
+	#Misc
+*/
+
+
+
+#site-title a:hover {
+	text-decoration: underline;
+	color: pink;
+}	
